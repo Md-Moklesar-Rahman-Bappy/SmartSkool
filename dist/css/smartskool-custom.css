@@ -1,0 +1,730 @@
+/* SmartSkool Manager - Custom Styles */
+
+/* ============================================
+   GLOBAL TYPOGRAPHY
+   ============================================ */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 10px;
+    }
+    
+    .stat-card {
+        margin-bottom: 15px;
+    }
+    
+    .sidebar-menu {
+        padding: 0;
+    }
+    
+    .main-sidebar .sidebar-menu li a {
+        padding: 10px 5px;
+    }
+    
+    .info-box {
+        padding: 10px;
+    }
+    
+    .info-box-icon {
+        width: 50px !important;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+/* ============================================
+   GLOBAL CARD STYLES
+   ============================================ */
+
+.card-modern {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-modern:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.card-modern .panel-heading {
+    border-radius: 10px 10px 0 0;
+    font-weight: 600;
+}
+
+/* ============================================
+   TABLE STYLES
+   ============================================ */
+
+.table-modern {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-modern thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.table-modern thead th {
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 12px;
+}
+
+.table-modern tbody tr {
+    transition: background 0.2s;
+}
+
+.table-modern tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.table-modern tbody td {
+    vertical-align: middle;
+    padding: 12px;
+    border-color: #f0f0f0;
+}
+
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
+
+.btn-modern {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-modern-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+}
+
+.btn-modern-primary:hover {
+    background: linear-gradient(135deg, #5a6fd6 0%, #6a3f8f 100%);
+    color: white;
+}
+
+/* ============================================
+   FORM STYLES
+   ============================================ */
+
+.form-modern .form-control {
+    border-radius: 8px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-modern .form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-modern label {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* ============================================
+   SIDEBAR STYLES
+   ============================================ */
+
+.main-sidebar .sidebar-menu > li > a {
+    border-radius: 8px;
+    margin: 3px 8px;
+    padding: 10px 15px;
+    transition: all 0.3s;
+}
+
+.main-sidebar .sidebar-menu > li > a:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.main-sidebar .sidebar-menu > li.active > a {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.main-sidebar .sidebar-menu .treeview-menu > li > a {
+    border-radius: 8px;
+    margin: 2px 5px;
+    padding: 8px 15px;
+}
+
+/* ============================================
+   BADGE STYLES
+   ============================================ */
+
+.badge-modern {
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-weight: 600;
+}
+
+.badge-success {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.badge-danger {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.badge-warning {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.badge-info {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+/* ============================================
+   ALERT STYLES
+   ============================================ */
+
+.alert-modern {
+    border-radius: 10px;
+    padding: 15px 20px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ============================================
+   MODAL STYLES
+   ============================================ */
+
+.modal-modern .modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.modal-modern .modal-header {
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.modal-modern .modal-title {
+    color: white;
+    font-weight: 600;
+}
+
+/* ============================================
+   LOGIN PAGE STYLES
+   ============================================ */
+
+.login-box {
+    width: 420px;
+    margin: 50px auto;
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+/* ============================================
+   QUICK ACTION BUTTONS
+   ============================================ */
+
+.quick-action-btn {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.quick-action-btn:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    transform: translateX(5px);
+}
+
+.quick-action-btn i {
+    margin-right: 10px;
+    width: 25px;
+}
+
+/* ============================================
+   AI TOOLS STYLES
+   ============================================ */
+
+.ai-tool-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-left: 4px solid #667eea;
+    transition: all 0.3s;
+}
+
+.ai-tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.ai-tool-card h3 {
+    color: #667eea;
+    margin-top: 0;
+}
+
+.ai-tool-card h3 i {
+    margin-right: 10px;
+}
+
+/* ============================================
+   FOOTER STYLES  
+   ============================================ */
+
+.main-footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+}
+
+/* ============================================
+   LOADING ANIMATION
+   ============================================ */
+
+.loading {
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============================================
+   LOADING SPINNER OVERLAY
+   ============================================ */
+
+.page-loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.page-loading-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ============================================
+   TOAST NOTIFICATIONS
+   ============================================ */
+
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toast {
+    min-width: 300px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.toast.success {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.toast.error {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.toast.warning {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.toast.info {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.toast i {
+    font-size: 20px;
+}
+
+.toast .toast-close {
+    margin-left: auto;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.toast .toast-close:hover {
+    opacity: 1;
+}
+
+/* ============================================
+   EMPTY STATE
+   ============================================ */
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #888;
+}
+
+.empty-state i {
+    font-size: 60px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.empty-state h3 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    color: #999;
+    margin-bottom: 20px;
+}
+
+/* ============================================
+   BUTTON LOADING STATE
+   ============================================ */
+
+.btn-loading {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+}
+
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+.btn-loading.btn-outline {
+    color: transparent !important;
+}
+
+.btn-loading.btn-outline::after {
+    border-color: #667eea;
+    border-top-color: transparent;
+}
+
+/* ============================================
+   FORM VALIDATION
+   ============================================ */
+
+.form-group.has-error .form-control {
+    border-color: #ef4444;
+}
+
+.form-group.has-error .help-block {
+    color: #ef4444;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.form-group.has-success .form-control {
+    border-color: #10b981;
+}
+
+.form-group.has-success .help-block {
+    color: #10b981;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ============================================
+   RESPONSIVE TABLE IMPROVEMENTS
+   ============================================ */
+
+.table-responsive {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 767px) {
+    .table-responsive > .table > thead > tr > th,
+    .table-responsive > .table > tbody > tr > th,
+    .table-responsive > .table > tfoot > tr > th,
+    .table-responsive > .table > thead > tr > td,
+    .table-responsive > .table > tbody > tr > td,
+    .table-responsive > .table > tfoot > tr > td {
+        white-space: nowrap;
+    }
+
+    .table-responsive-force {
+        overflow-x: auto;
+    }
+
+    .table-responsive-force > .table {
+        min-width: 600px;
+    }
+}
+
+/* Sticky header for tables */
+.table-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* ============================================
+   MODAL IMPROVEMENTS
+   ============================================ */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay.fade .modal-content {
+    transform: scale(0.8) translateY(-20px);
+    transition: all 0.3s;
+}
+
+.modal-overlay.fade.active .modal-content {
+    transform: scale(1) translateY(0);
+}
+
+.modal-content-modern {
+    background: white;
+    border-radius: 15px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow: auto;
+}
+
+/* ============================================
+   CARD IMPROVEMENTS
+   ============================================ */
+
+.card-hover {
+    transition: all 0.3s;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* ============================================
+   STAT CARDS IMPROVEMENTS
+   ============================================ */
+
+.stat-card-new {
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.stat-card-new:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.stat-card-new .stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+.stat-card-new .stat-icon.blue {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stat-card-new .stat-icon.green {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.stat-card-new .stat-icon.orange {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.stat-card-new .stat-icon.red {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+/* ============================================
+   BREADCRUMB IMPROVEMENTS
+   ============================================ */
+
+.breadcrumb {
+    padding: 15px 0;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+.breadcrumb > li + li::before {
+    content: '/';
+    padding: 0 10px;
+    color: #ccc;
+}
+
+.breadcrumb li a {
+    color: #667eea;
+}
+
+.breadcrumb li a:hover {
+    color: #764ba2;
+}
+
+/* ============================================
+   PAGINATION STYLES
+   ============================================ */
+
+.pagination > li > a,
+.pagination > li > span {
+    border-radius: 50px !important;
+    margin: 0 3px;
+    padding: 8px 14px;
+}
+
+.pagination > li.active > a {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-color: #667eea;
+}
+
+/* ============================================
+   SCROLLBAR STYLES
+   ============================================ */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #5a6fd6 0%, #6a3f8f 100%);
+}

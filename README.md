@@ -58,7 +58,7 @@ SmartSkool is a simple PHP-based School Management System designed to streamline
   DB_NAME=smartskool
 ```
 
-4. Start Apache & MySQL in XAMPP and visit:
+5. Start Apache & MySQL in XAMPP and visit:
 ```bash
     http://localhost/SmartSkool
 ```
